@@ -218,27 +218,3 @@ Deletes file from filesystem and database record.
 
 ---
 
-## 6. Database Schema
-
-### `documents` Table
-
-| Column | Type | Description |
-|--------|------|-------------|
-| `id` | INTEGER PRIMARY KEY AUTOINCREMENT | Unique document identifier |
-| `originalName` | TEXT NOT NULL | Original filename uploaded by user |
-| `filename` | TEXT NOT NULL | Unique filename stored on disk |
-| `filepath` | TEXT NOT NULL | Full path to file in uploads folder |
-| `filesize` | INTEGER NOT NULL | File size in bytes |
-| `created_at` | DATETIME DEFAULT CURRENT_TIMESTAMP | Upload timestamp |
-
----
-
-## 7. Future Enhancements
-
-- Add file preview functionality (PDF viewer in browser)
-- Implement search and filtering capabilities
-- Add file metadata extraction (page count, document properties)
-- Support for additional file types (images, Word documents)
-- Batch upload functionality
-- User-friendly error messages with toast notifications
-- Progress indicators for large file uploads
